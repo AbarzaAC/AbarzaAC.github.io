@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TV AAC - Plataforma de videos en categorías como deportes, música, anime, noticias e informática.">
+    <meta name="keywords" content="videos, deportes, música, anime, noticias, informática, videos en línea">
+    <meta name="author" content="Tu Nombre">
+    <title>TV AAC - Plataforma de Videos</title>
+    <link rel="stylesheet" href="tv.css">
+</head>
+<body>
+    <header>
+        <h1><a href="tvaac.html" class="logo">TV AAC</a></h1>
+        <button id="theme-toggle" aria-label="Activar/desactivar modo oscuro">Modo Oscuro</button>
+        <input type="search" id="search-bar" placeholder="Buscar videos..." aria-label="Buscar videos">
+    </header>    
+    <main>
+        <section id="video-player">
+            <video id="current-video" controls>
+                <source src="videos/presentacionfps.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+        <section id="categories">
+            <h2>Categorías</h2>
+            <div class="category" data-filter="all">Todos</div>
+            <div class="category" data-filter="sports">Deportes</div>
+            <div class="category" data-filter="music">Música</div>
+            <div class="category" data-filter="anime">Anime</div>
+            <div class="category" data-filter="news">Noticias</div>
+            <div class="category" data-filter="informatics">Informática</div>
+            <div class="category" data-filter="other">Otros</div>
+        </section>
+        <section id="video-list">
+            <div class="video-item" data-src="videos/deportes/video1.mp4" data-category="sports">
+                <a href="Deportes.html" title="Ver video de Deportes">
+                    <img src="imagenes/deportes.webp" alt="Portada de Video de Deportes">
+                </a>
+                <p>Video de Deportes</p>
+            </div>
+            <div class="video-item" data-src="videos/musica/video2.mp4" data-category="music">
+                <a href="Musica.html" title="Ver video de Música">
+                    <img src="imagenes/musica.avif" alt="Portada de Video de Música">
+                </a>
+                <p>Video de Música</p>
+            </div>
+            <div class="video-item" data-src="videos/anime/video3.mp4" data-category="anime">
+                <a href="Anime.html" title="Ver video de Anime">
+                    <img src="imagenes/anime.avif" alt="Portada de Video de Anime">
+                </a>
+                <p>Video de Anime</p>
+            </div>
+            <div class="video-item" data-src="videos/noticias/video4.mp4" data-category="news">
+                <a href="Noticias.html" title="Ver video de Noticias">
+                    <img src="imagenes/noticias.webp" alt="Portada de Video de Noticias">
+                </a>
+                <p>Video de Noticias</p>
+            </div>
+            <div class="video-item" data-src="videos/informatica/video5.mp4" data-category="informatics">
+                <a href="Informatica.html" title="Ver video de Informática">
+                    <img src="imagenes/informatica.jpg" alt="Portada de Video de Informática">
+                </a>
+                <p>Video de Informática</p>
+            </div>
+            <div class="video-item" data-src="videos/otros/video6.mp4" data-category="other">
+                <a href="otro.html" title="Ver otros videos">
+                    <img src="imagenes/otro.webp" alt="Portada de Otros Videos">
+                </a>
+                <p>Otros Videos</p>
+            </div>
+        </section>
+    </main>
+    <script src="tve.js"></script>
+</body>
+</html>
